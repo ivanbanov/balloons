@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "allowJs": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "paths": {
+      "@dunky.dev/balloons": ["./packages/core/src"],
+      "@dunky.dev/balloons-dom": ["./packages/dom/src"]
+    },
+    "types": ["@types/node", "vitest/globals"]
+  },
+  "include": ["*.ts"]
+}

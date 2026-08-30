@@ -1,0 +1,4 @@
+{
+  "*.ts": ["oxlint --fix --no-error-on-unmatched-pattern", "oxfmt"],
+  "*.md": ["oxfmt"]
+}

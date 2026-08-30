@@ -1,0 +1,7 @@
+packages:
+  - packages/**/*
+  - sandbox/**/*
+  - benchmark
+  - benchmark/demo
+allowBuilds:
+  esbuild: true

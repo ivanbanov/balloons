@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>balloons - dom sandbox</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+      }
+      .scroll-area {
+        height: 100vh;
+        overflow: auto;
+      }
+      .spacer {
+        height: 80vh;
+      }
+      .anchor {
+        display: block;
+        margin: 0 auto;
+        font: inherit;
+        padding: 0.6rem 1.2rem;
+      }
+      .tooltip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max-content;
+        max-width: 16rem;
+        background: #222;
+        color: #fff;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+      }
+      .arrow {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #222;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-area">
+      <div class="spacer"></div>
+      <button class="anchor" type="button">Scroll me around</button>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+    </div>
+    <div class="tooltip" role="tooltip">
+      Anchored with offset + flip + shift; kept fresh by autoUpdate through the shared scheduler.
+      Placement: <b class="placement"></b>
+      <div class="arrow"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

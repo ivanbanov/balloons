@@ -1,0 +1,17 @@
+{
+  "name": "benchmark",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "benchmark": "NODE_ENV=production node --import tsx index.ts"
+  },
+  "dependencies": {
+    "@dunky.dev/balloons": "workspace:^"
+  },
+  "devDependencies": {
+    "@floating-ui/core": "^1.7.5",
+    "tinybench": "^2.9.0",
+    "tsx": "^4.22.3"
+  }
+}

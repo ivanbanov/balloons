@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>balloons - canvas sandbox (non-DOM platform)</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem;
+      }
+      canvas {
+        border: 1px solid #ccc;
+        display: block;
+        margin-top: 1rem;
+        touch-action: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Non-DOM platform</h1>
+    <p>
+      Move the pointer: the anchor follows it, and the tooltip is positioned by
+      <code>computePosition</code> over plain scene rects — no DOM measurement anywhere. It flips
+      and shifts at the canvas edges.
+    </p>
+    <canvas width="800" height="480"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

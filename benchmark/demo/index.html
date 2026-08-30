@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>balloons benchmark</title>
+    <style>
+      body {
+        font-family: ui-monospace, monospace;
+        max-width: 48rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      td,
+      th {
+        border: 1px solid #ccc;
+        padding: 0.4rem 0.6rem;
+        text-align: left;
+      }
+      button {
+        font: inherit;
+        padding: 0.5rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>balloons vs floating-ui</h1>
+    <p>
+      Same synthetic sync platform, same geometry, equivalent middleware (offset + flip + shift).
+      In-browser snapshot — one machine, one run.
+    </p>
+    <button id="run">Run</button>
+    <div id="results"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
